@@ -1,4 +1,7 @@
 DemoApp::Application.routes.draw do
+  resources :parts
+  resources :vendors
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

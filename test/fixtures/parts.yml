@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  material: MyString
+  coating: MyString
+  manufacturing_process: MyString
+  size: MyString
+  length: MyString
+  vendor_id: 1
+  price_current: 1.5
+  price_last: 1.5
+
+two:
+  name: MyString
+  material: MyString
+  coating: MyString
+  manufacturing_process: MyString
+  size: MyString
+  length: MyString
+  vendor_id: 1
+  price_current: 1.5
+  price_last: 1.5

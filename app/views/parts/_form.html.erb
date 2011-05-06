@@ -1,0 +1,53 @@
+<%= form_for(@part) do |f| %>
+  <% if @part.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@part.errors.count, "error") %> prohibited this part from being saved:</h2>
+
+      <ul>
+      <% @part.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :material %><br />
+    <%= f.text_field :material %>
+  </div>
+  <div class="field">
+    <%= f.label :coating %><br />
+    <%= f.text_field :coating %>
+  </div>
+  <div class="field">
+    <%= f.label :manufacturing_process %><br />
+    <%= f.text_field :manufacturing_process %>
+  </div>
+  <div class="field">
+    <%= f.label :size %><br />
+    <%= f.text_field :size %>
+  </div>
+  <div class="field">
+    <%= f.label :length %><br />
+    <%= f.text_field :length %>
+  </div>
+  <div class="field">
+    <%= f.label :vendor_id %><br />
+    <%= f.text_field :vendor_id %>
+  </div>
+  <div class="field">
+    <%= f.label :price_current %><br />
+    <%= f.text_field :price_current %>
+  </div>
+  <div class="field">
+    <%= f.label :price_last %><br />
+    <%= f.text_field :price_last %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

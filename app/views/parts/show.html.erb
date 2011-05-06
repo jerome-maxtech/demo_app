@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @part.name %>
+</p>
+
+<p>
+  <b>Material:</b>
+  <%= @part.material %>
+</p>
+
+<p>
+  <b>Coating:</b>
+  <%= @part.coating %>
+</p>
+
+<p>
+  <b>Manufacturing process:</b>
+  <%= @part.manufacturing_process %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%= @part.size %>
+</p>
+
+<p>
+  <b>Length:</b>
+  <%= @part.length %>
+</p>
+
+<p>
+  <b>Vendor:</b>
+  <%= @part.vendor_id %>
+</p>
+
+<p>
+  <b>Price current:</b>
+  <%= @part.price_current %>
+</p>
+
+<p>
+  <b>Price last:</b>
+  <%= @part.price_last %>
+</p>
+
+
+<%= link_to 'Edit', edit_part_path(@part) %> |
+<%= link_to 'Back', parts_path %>
